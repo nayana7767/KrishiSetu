@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-stone-50 text-stone-900 font-sans antialiased;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+}
+
+/* Custom agricultural scrollbars and touches */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* High contrast touch targets for farmers */
+.btn-farmer-primary {
+  @apply bg-emerald-700 hover:bg-emerald-800 active:bg-emerald-900 text-white font-bold py-3 px-6 rounded-xl shadow-md transition-all duration-150 flex items-center justify-center gap-2 text-lg;
+}
+
+.btn-farmer-secondary {
+  @apply bg-amber-600 hover:bg-amber-700 active:bg-amber-800 text-white font-bold py-3 px-6 rounded-xl shadow-md transition-all duration-150 flex items-center justify-center gap-2 text-lg;
+}
+
+.card-farmer {
+  @apply bg-white border-2 border-stone-200 hover:border-emerald-500 rounded-2xl shadow-sm hover:shadow-md transition-all p-5;
+}
